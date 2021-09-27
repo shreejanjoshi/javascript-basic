@@ -12,5 +12,14 @@
 (function() {
 
   // your code here
+    var answer= prompt("Do you want some cake?");
+    answer = answer.toLowerCase();
+
+    if (answer == "yes"){
+        alert("Congratulation here is your cake.");
+    }else{
+        alert("More cake for me then :p !");
+    }
+
 
 })();

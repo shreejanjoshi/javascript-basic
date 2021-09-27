@@ -13,4 +13,6 @@
 
     // your code here
 
+    var message = alert("Hello, World!")
+
 })();

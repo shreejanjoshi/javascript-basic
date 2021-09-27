@@ -12,5 +12,21 @@
 (function() {
 
     // your code here
+       function askQuestion()
+    {
+        var age = prompt("What is your age?");
+        var gender = prompt("What is your gender?");
+        var town = prompt("What is your town name");
+
+        gender = gender.toLowerCase();
+        town = town.toLowerCase();
+
+        var info = confirm("Your age is " + age + " , gender " + gender + " and your town name is " + town + ".");
+
+        if (info == false) {
+            askQuestion();
+        }
+    }
+    askQuestion();
 
 })();
