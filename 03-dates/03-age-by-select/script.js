@@ -13,4 +13,49 @@
 
     // your code here
 
+    /*
+    let day = document.getElementById("dob-day");
+    let month = document.getElementById("dob-month");
+    */
+    let year = document.getElementById("dob-year");
+
+    let button = document.getElementById("run");
+
+    let today = new Date();
+
+    /*
+    let d = today.getDate();
+    let m = today.getMonth() + 1;
+    */
+    let y = today.getFullYear();
+
+    button.addEventListener("click",(days, months, years) =>{
+        /*
+        days = day.value;
+        months = month.value;
+         */
+        years = year.value;
+
+        if(/*day.value == "" || month.value == "" || */year.value == ""){
+            alert("Pls! enter your Date of Birth properly");
+        }
+
+        let ageYear = y - years;
+
+        /*
+
+        if(m <= months){
+            m = m + 12;
+        }
+
+        let ageMonth = m - month;
+
+        let ageDays = (day - d) + parseInt(days);
+
+
+         */
+
+        alert("Your age is " + ageYear);
+    })
+
 })();

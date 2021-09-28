@@ -15,4 +15,22 @@
 
     // your code here
 
+    let time = new Date();
+    let hours = time.getHours();
+    let min = time.getMinutes();
+    let text;
+
+    if(hours >= 17 && hours <=18){
+        if (min <= 30){
+            text = "Hello"
+        }else{
+            text = "Good Evening"
+        }
+    }else if (hours >= 18){
+        text = "Good Evening";
+    }else{
+        text = "Hello";
+    }
+    document.getElementById("target").innerHTML=text;
+
 })();

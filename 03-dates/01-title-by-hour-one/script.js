@@ -15,4 +15,15 @@
 
     // your code here
 
+    let time = new Date();
+    let hours = time.getHours();
+    let text;
+
+    if (hours >= 18){
+        text = "Good Evening";
+    }else{
+        text = "Hello";
+    }
+    document.getElementById("target").innerHTML=text;
+
 })();

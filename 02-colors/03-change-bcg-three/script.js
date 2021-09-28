@@ -40,5 +40,5 @@
         document.body.style.background = randomColor;
 
     });
-    
+
 })();
