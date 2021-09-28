@@ -16,7 +16,7 @@
     var button = document.getElementById("run");
 
     run.addEventListener('click', ()=>{
-        var colorName = document.getElementById("color");
+        var colorName = document.getElementById("color").value;
         document.body.style.background = colorName;
     })
 
