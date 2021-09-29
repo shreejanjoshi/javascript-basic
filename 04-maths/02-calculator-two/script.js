@@ -9,15 +9,34 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
     // to get the value of an input: document.getElementById("element-id").value
 
-    var performOperation = function(operation) {
+    var performOperation = function (operation) {
         // perform the operation
+        switch (operation) {
+            case "addition":
+                const a = parseInt(document.getElementById("op-one").value) + parseInt(document.getElementById("op-two").value);
+                document.getElementById("result").innerHTML = a;
+                break;
+            case "substraction":
+                const s = parseInt(document.getElementById("op-one").value) - parseInt(document.getElementById("op-two").value);
+                document.getElementById("result").innerHTML = s;
+                break;
+            case "multiplication":
+                const m = parseInt(document.getElementById("op-one").value) * parseInt(document.getElementById("op-two").value);
+                document.getElementById("result").innerHTML = m;
+                break;
+            default:
+                const d = parseInt(document.getElementById("op-one").value) / parseInt(document.getElementById("op-two").value);
+                document.getElementById("result").innerHTML = d;
+        }
     };
 
-    Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
-        $btn.addEventListener("click", function() {
+    Array.from(document.querySelectorAll("button.operator")).forEach(function (
+        $btn
+    ) {
+        $btn.addEventListener("click", function () {
             performOperation($btn.id);
         });
     });

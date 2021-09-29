@@ -12,9 +12,13 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
-
+        var x = [];
+        for(i=1;i<=21;i++) {
+            if(Math.sqrt(i) % 1 === 0) {
+                x.push(i);
+            }
+        }
+        alert(x);
     });
 
 })();
