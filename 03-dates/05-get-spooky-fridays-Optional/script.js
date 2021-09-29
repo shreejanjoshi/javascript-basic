@@ -15,10 +15,11 @@
 
     let monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-    let year = document.getElementById("year").value;
+
     let button = document.getElementById("run");
 
     button.addEventListener('click', ()=>{
+        let year = document.getElementById("year").value;
 
         let date = new Date();
         let dates = [];
