@@ -14,8 +14,10 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
-
         // your code here
+        const points = document.getElementById("numbers").value.split(",")
+        points.sort(function(a, b){return a-b});
+        document.getElementById("result").innerHTML = points.sort(function(a, b){return a-b})
 
     });
 
