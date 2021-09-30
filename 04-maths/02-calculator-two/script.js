@@ -12,25 +12,32 @@
 (function () {
     // to get the value of an input: document.getElementById("element-id").value
 
-    var performOperation = function (operation) {
-        // perform the operation
+    var performOperation = function(operation) {
+
+
         switch (operation) {
-            case "addition":
-                const a = parseInt(document.getElementById("op-one").value) + parseInt(document.getElementById("op-two").value);
-                document.getElementById("result").innerHTML = a;
+            case 'addition':
+                var x = document.getElementById("op-one").value;
+                var y = document.getElementById("op-two").value;
+                var result = Number(x) + Number(y);
                 break;
-            case "substraction":
-                const s = parseInt(document.getElementById("op-one").value) - parseInt(document.getElementById("op-two").value);
-                document.getElementById("result").innerHTML = s;
+            case 'substraction':
+                var x = document.getElementById("op-one").value;
+                var y = document.getElementById("op-two").value;
+                var result = Number(x) - Number(y);
                 break;
-            case "multiplication":
-                const m = parseInt(document.getElementById("op-one").value) * parseInt(document.getElementById("op-two").value);
-                document.getElementById("result").innerHTML = m;
+            case 'multiplication':
+                var x = document.getElementById("op-one").value;
+                var y = document.getElementById("op-two").value;
+                var result = Number(x) * Number(y);
                 break;
-            default:
-                const d = parseInt(document.getElementById("op-one").value) / parseInt(document.getElementById("op-two").value);
-                document.getElementById("result").innerHTML = d;
+            case 'division':
+                var x = document.getElementById("op-one").value;
+                var y = document.getElementById("op-two").value;
+                var result = Number(x) / Number(y);
+                break;
         }
+        alert(result);
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function (
