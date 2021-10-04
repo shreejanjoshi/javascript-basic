@@ -13,11 +13,11 @@
 
     // your code here
 
-    document.getElementById("pass-one").addEventListener("input", function (){
-        var enter = document.getElementById("part-one").value;
+    document.getElementById("pass-one").addEventListener("keyup", function (){
+        var enter = document.getElementById("pass-one").value;
 
-        document.getElementById("part-one").maxLength = 10;
-        document.getElementById("counter").innerHTML= `${x.length}/10`
+        document.getElementById("pass-one").maxLength = "10";
+        document.getElementById("counter").innerHTML= enter.length+"/10"
 
     })
 
