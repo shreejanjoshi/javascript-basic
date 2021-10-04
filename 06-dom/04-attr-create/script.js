@@ -9,8 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // your code here
+
+    var img = "<img src=\"http://www.randomkittengenerator.com/cats/rotator.php\">";
+
+    document.getElementById("target").innerHTML = img;
+    document.querySelector("#source").remove();
 
 })();

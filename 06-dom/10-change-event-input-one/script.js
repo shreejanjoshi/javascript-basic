@@ -13,4 +13,12 @@
 
     // your code here
 
+    document.getElementById("pass-one").addEventListener("input", function (){
+        var enter = document.getElementById("part-one").value;
+
+        document.getElementById("part-one").maxLength = 10;
+        document.getElementById("counter").innerHTML= `${x.length}/10`
+
+    })
+
 })();

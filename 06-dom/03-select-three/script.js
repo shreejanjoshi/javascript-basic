@@ -14,10 +14,10 @@
     // your code here
     function() {
 
-        var el = document.getElementsByClassName('target')
+        var x = document.getElementsByClassName('target')
   
         for (var i = 0; i < el.length; i++) {
-          el[i].innerHTML = "Owned";
+          x[i].innerHTML = "Owned";
         }
 
 })();

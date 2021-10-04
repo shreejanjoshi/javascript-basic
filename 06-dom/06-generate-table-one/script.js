@@ -13,4 +13,11 @@
 
     // your code here
 
+    var table = document.createElement("table");
+    document.getElementById("target").append(table);
+
+    for(var i =0; i<10; i++){
+        table.insertRow(i).innerHTML="<tr><td>"+i+"</td></tr>";
+    }
+
 })();

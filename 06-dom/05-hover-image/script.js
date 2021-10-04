@@ -13,4 +13,13 @@
 
     // your code here
 
+    var ori = document.querySelector('.material figure img').getAttribute('src');
+    var hover = document.querySelector('.material figure img').getAttribute('data-hover');
+    document.querySelector('.material figure img').addEventListener('mouseover', function(event) {
+        document.querySelector('.material figure img').setAttribute('src', hover)
+    });
+    document.querySelector('.material figure img').addEventListener('mouseleave', function(event) {
+        document.querySelector('.material figure img').setAttribute('src', ori)
+    });
+
 })();
