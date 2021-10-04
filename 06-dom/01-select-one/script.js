@@ -12,5 +12,8 @@
 (function() {
 
     // your code here
+    (function() {
+
+        document.getElementById('target').innerHTML = "Owned";
 
 })();
