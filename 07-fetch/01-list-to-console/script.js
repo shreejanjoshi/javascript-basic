@@ -11,4 +11,11 @@
 
 (() => {
     // your code here
+    async  function  getData(){
+    fetch("http://localhost:63342/javascript-basic/_shared/api.json")
+        .then(res => res.json())
+        .then(data => console.log(data))
+    }
+
+    document.getElementById("run").addEventListener("click",getData);
 })();
