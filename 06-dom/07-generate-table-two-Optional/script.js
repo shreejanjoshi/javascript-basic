@@ -9,8 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // your code here
+    var target = document.getElementById("target");
+    var table = document.createElement("TABLE");
+    target.appendChild(table);
+    for (let i = 0; i < 11; i++) {
+        var row = table.insertRow(i);
+        for (let j = 0; j < 11; j++) {
+            row.insertCell(j).innerHTML = j * i;
+
+        }
+
+    }
 
 })();
