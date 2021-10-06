@@ -16,6 +16,7 @@
         await fetch('../../_shared/api.json')
 
             .then(api => api.json())
+            
 
 
             .then(data => {
@@ -50,6 +51,7 @@
                             document.getElementById("target").appendChild(changeTemplate);
 
                             console.log(hero);
+                            
                         }
                     })
                 })
